@@ -61,6 +61,12 @@ public class LibraryTest {
         myLibrary.addBookInLibrary(book6);
         assertEquals(6, myLibrary.getTheSize());
     }
+    @Test
+    public void checkIfTheLibraryIsFull(){
+        myLibrary.addBookInLibrary(book6);
+        myLibrary.addBookInLibrary(book1);
+        assertEquals(false,myLibrary.checkCapasity());
+    }
 
     @Test
     public void  customerBorrowsBooks(){

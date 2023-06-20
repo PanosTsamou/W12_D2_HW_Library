@@ -13,7 +13,7 @@ public class Library {
 
     public Library(ArrayList<Book> libra){
         this.libra = libra;
-        this.capasity = 100;
+        this.capasity = 6;
         trackBooksByGenre = new HashMap<>();
     }
 
@@ -27,7 +27,7 @@ public class Library {
         }
     }
 
-    private Boolean checkCapasity(){
+    public Boolean checkCapasity(){
         if (this.libra.size()< capasity){
             return true;
         }
